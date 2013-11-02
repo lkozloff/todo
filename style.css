@@ -1,0 +1,31 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(200,200,200);
+}
+.label{
+    font-size: large;
+    background-color: rgb(128,225,225);
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+.list{
+    background-color: white;
+    width: 300px;
+    padding: 5px;
+    position: relative;
+    right: 10px;
+}
+.done-true {
+    color: red;
+    text-decoration: line-through;
+}
+.shadow{
+    padding: 0px 5px 5px 0px;
+    background-color: black;
+    width: 300px;
+    position: relative;
+    left: 25%;
+}
+li{
+    list-style: none;
+}
