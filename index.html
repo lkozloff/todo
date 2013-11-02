@@ -2,13 +2,25 @@
 <html ng-app>
     <head>
         <script src="angular.min.js"></script>
+        <script src="todo.js"></script>
+        <link rel = "stylesheet" type="text/css" href="style.css">
     </head>
-    <body>
-        <div>
-            <label>Name:</label>
-            <input type = "text" ng-model="yourName" placeholder="Enter a name here">
+    <body ng-controller="TodoCtrl">
+      <div class ="shadow">
+        <div class="list">
+            <div class="label">Todo list</div>
+            <ul>
+                <li ng-repeat="todo in todos">
+                    <input type="checkbox" ng-model="todo.done"/>
+                    <span class="done-{{todo.done}}">
+                        {{todo.text}}
+                    </span>
+                </li>
+            </ul>
+            <input type = "text" ng-model="item" placeholder="Enter an item here"/>
+            <button ng-click="addItem()">Add</button>
             <hr>
-            <h1>Hello {{yourName}}!</h1>
         </div>
+      </div>
     </body>
 </html>
