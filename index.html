@@ -6,7 +6,6 @@
         <link rel = "stylesheet" type="text/css" href="style.css">
     </head>
     <body ng-controller="TodoCtrl">
-      <div class ="shadow">
         <div class="list">
             <div class="label">Todo list</div>
             <ul>
@@ -15,12 +14,14 @@
                     <span class="done-{{todo.done}}">
                         {{todo.text}}
                     </span>
+                    <a ng-click="remove(todo)" href="#">&nbsp;remove</a>
                 </li>
             </ul>
             <input type = "text" ng-model="item" placeholder="Enter an item here"/>
             <button ng-click="addItem()">Add</button>
             <hr>
+            <a ng-click="clearCompleted()" href="#">clear completed&nbsp;&nbsp;&nbsp;|</a>&nbsp;
+            <a ng-click="save()" href="#">save</a>
         </div>
-      </div>
     </body>
 </html>

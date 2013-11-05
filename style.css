@@ -3,29 +3,31 @@ body{
     background-color: rgb(200,200,200);
 }
 .label{
-    font-size: large;
     background-color: rgb(128,225,225);
-    padding: 5px 5px 5px 5px;
+    padding: 7px 7px 7px 7px;
     text-align: center;
 }
 .list{
     background-color: white;
     width: 300px;
     padding: 5px;
-    position: relative;
-    right: 10px;
+    margin: auto;
+    left: 50%;
+    border-color:rgb(120,120,120);
+    border-width: 0px 5px 5px 0px;
+    border-style: solid;
 }
 .done-true {
     color: red;
     text-decoration: line-through;
 }
-.shadow{
-    padding: 0px 5px 5px 0px;
-    background-color: black;
-    width: 300px;
-    position: relative;
-    left: 25%;
-}
 li{
     list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: x-small;
+}
+a:hover{
+    color: red;
 }
